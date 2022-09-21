@@ -1,0 +1,134 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--foot-back);
+  }
+  .container_position {
+    display: flex;
+    align-items: baseline;
+    // column-gap: 70px;
+  }
+  .contianer-contacts {
+    margin-right: 70px;
+  }
+  .logo_position,
+  .logo_white {
+    display: flex;
+    height: 31px;
+    margin-bottom: 20px;
+  }
+  .logo_white {
+    color: var(--main-back);
+  }
+  .footer-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .footer-contacts__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--main-back);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-col);
+    }
+  }
+  .footer-contacts__link_color {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .social-footer {
+    margin-right: 93px;
+  
+    &__text {
+      margin-top: 0;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--main-back);
+    }
+    &__list {
+      display: flex;
+      column-gap: 10px;
+    }
+    &__item {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+    }
+  }
+  
+  .social-footer__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--main-back);
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      background-color: var(--accent-col);
+    }
+  }
+  
+  /* Form */
+  .footer-form-block {
+    margin-left: auto;
+  
+    &__name {
+      margin-top: 0;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--main-back);
+    }
+  }
+  
+  .footer-form {
+    display: flex;
+    align-items: center;
+  }
+  .footer-form__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.2;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px; 
+    background-color: var(--foot-back);
+    color: var(--main-back);
+  
+    &::placeholder {
+      color: var(--form-text-color);
+    }
+  }
+  
+  .form__button {
+    display: inline-flex;
+    min-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding: 10px 28px;
+    align-items: center;
+   
+    &_icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      fill: var(--main-back);
+    }
+  }
+  
+  

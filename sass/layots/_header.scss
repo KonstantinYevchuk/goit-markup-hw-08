@@ -1,0 +1,104 @@
+  .container__header {
+    display: flex;
+    border-bottom: 1px solid var(--border-headre);
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  
+    &__list {
+      display: flex;
+      margin-left: 91px;
+    }
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .logo {
+    color: var(--accent-col);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  .logo_black {
+    color: var(--studio-head);
+  }
+  
+  .navigation__link {
+    display: block;
+    @include font(500, 14px, 1.14, 0.02em);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--main-col);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+      color: var(--accent-col);
+    }
+  
+  }
+  .navigation__link_current {
+    position: relative;
+    color: var(--accent-col);
+  
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-col);
+      transform: translateY(1px);
+    }
+  }
+  
+  .contacts {
+    display: flex;
+    margin-left: auto;
+    column-gap: 30px;
+  }
+  
+  .contacts__link {
+    display: flex;
+    @include font(500, 14px, 1.14, 0.02em);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    color: var(--text-col);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-col);
+    }
+  }
+  
+  .contacts__icon {
+    display: inline-flex;
+    margin-right: 10px;
+    fill: currentColor;
+  
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:hover {
+    fill: var(--accent-col);
+    }
+  }
+  
+  
+  

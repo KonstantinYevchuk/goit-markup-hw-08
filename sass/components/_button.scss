@@ -1,0 +1,18 @@
+.button {
+  @include font(700, 16px, 1.9, 0.06em);
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: var(--accent-col);
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--main-back);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+    background: var(--main-button-ac);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+  

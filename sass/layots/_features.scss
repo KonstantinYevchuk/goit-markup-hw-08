@@ -1,0 +1,31 @@
+.list-features {
+    display: flex;
+    gap: 30px;
+  
+    &__item {
+      flex-basis: calc((100% - 30px) / 4);
+    }
+    &__name {
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    &__description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    &__icon {
+      display: flex;
+      width: 270px;
+      height: 120px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      background-color: var(--team-back);
+    }
+  }
+  
+  
