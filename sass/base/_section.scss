@@ -1,16 +1,30 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
   &__title {
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 0.8;
     text-align: center;
     margin: 0;
     }
 
     &__title_position {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     }
-  
+  }
+  @media screen and (min-width: 1200px) {
+    .section {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+    .section__title {
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      margin: 0;
+    }
+    .section__title_position {
+      margin-bottom: 50px;
+      }
   }

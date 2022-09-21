@@ -1,31 +1,64 @@
-.list-features {
-    display: flex;
-    gap: 30px;
-  
-    &__item {
-      flex-basis: calc((100% - 30px) / 4);
+
+    .list-features__item {
+      margin-bottom: 30px;
     }
-    &__name {
+    .list-features__name {
+      text-align: center;
       font-size: 14px;
       line-height: 1.14;
-      text-transform: uppercase;
       margin-top: 0;
       margin-bottom: 10px;
     }
-    &__description {
+    .list-features__description {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.7;
     }
-    &__icon {
+    .list-features__icon {
       display: flex;
-      width: 270px;
+      min-width: 450px;
       height: 120px;
       justify-content: center;
       align-items: center;
       margin-bottom: 30px;
       background-color: var(--team-back);
     }
-  }
   
+  @media screen and (min-width: 768px) {
+    .list-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    
+    &__item {
+      margin-bottom: 0;
+      flex-basis: calc((100% - 30px) / 2);
+      }
+    &__name {
+      text-align: start;
+    }  
+    &__icon {
+      min-width: 354px;
+      }  
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .list-features {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
+    
+    &__item {
+      margin-bottom: 0;
+      flex-basis: calc((100% - 30px) / 4);
+      }
+    &__name {
+      text-align: start;
+    }  
+    &__icon {
+      min-width: 270px;
+      }  
+    }
+  }
   
