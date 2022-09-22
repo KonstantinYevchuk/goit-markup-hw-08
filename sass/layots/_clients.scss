@@ -1,15 +1,11 @@
 .list-clients {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 30px;
   
   &__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
-    }
-  
-  &__item:not(:last-child) {
-    margin-right: 30px;
     }
   }
   
@@ -33,5 +29,19 @@
       fill: var(--accent-col);
     }
   }
+  @media screen and (min-width: 768px) {
+    .list-clients__item {
+        width: 226px;
+        }
+    }
   
+
+  @media screen and (min-width: 1200px) {
+    .list-clients {
+      flex-wrap: nowrap;
+      &__item {
+        width: 170px;
+        }
+    }
+  }
   

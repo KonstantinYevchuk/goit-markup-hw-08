@@ -16,7 +16,7 @@
     }
     .list-features__icon {
       display: flex;
-      min-width: 450px;
+      width: 450px;
       height: 120px;
       justify-content: center;
       align-items: center;
@@ -38,7 +38,7 @@
       text-align: start;
     }  
     &__icon {
-      min-width: 354px;
+      width: 354px;
       }  
     }
   }
@@ -57,7 +57,7 @@
       text-align: start;
     }  
     &__icon {
-      min-width: 270px;
+      width: 270px;
       }  
     }
   }
