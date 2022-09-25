@@ -283,14 +283,12 @@ p {
   position: relative;
   display: flex;
   width: 425px;
-  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
-  padding-left: 8px;
+  padding-left: 25px;
   font-weight: 400;
   line-height: 1.7;
+  font-size: 12px;
   color: var(--text-col);
 }
 .agreement-label__link {
@@ -298,6 +296,13 @@ p {
   color: var(--accent-col);
 }
 
+@media screen and (min-width: 1200px) {
+  .agreement-label {
+    font-size: 14px;
+    padding-left: 8px;
+    justify-content: center;
+  }
+}
 .agreement-label__icon {
   position: absolute;
   left: 0;
@@ -647,7 +652,7 @@ p {
 }
 .main-content__back-image {
   max-width: 480px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header\ img-480.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-image/Header-480@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -669,15 +674,20 @@ p {
   padding: 10px 24px;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .main-content__back-image {
+    background-image: url(/images/main-image/Header480\ @2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .main-content__back-image {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header\ img-768.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-image/Header-678@1x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .main-content__back-image {
+    background-image: url(/images/main-image/Header-678\ @2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -686,13 +696,8 @@ p {
     padding-bottom: 200px;
   }
   .main-content__back-image {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-image/Header-1200@1x.jpg);
   }
   .main-content__title {
     font-weight: 900;
@@ -704,6 +709,11 @@ p {
   .main-content__button {
     min-width: 216px;
     padding: 10px 32px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .main-content__back-image {
+    background-image: url(/images/main-image/Header-1200@2x.jpg);
   }
 }
 .list-features__item {
