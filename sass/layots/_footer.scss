@@ -124,11 +124,17 @@
       fill: var(--main-back);
     }
   }
-  
+  @media screen and (min-width: 768px) {
+      .container_position {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+      }
+  }
   @media screen and (min-width: 1200px) {
     .container_position {
-      display: flex;
-      align-items: baseline;
+      flex-wrap: nowrap;
       text-align: start;
     }
     .contianer-contacts {
