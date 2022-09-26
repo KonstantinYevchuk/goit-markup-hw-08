@@ -2,9 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
   
   &__item {
-    width: 210px;
+    max-width: 210px;
+    width: 100%;
     height: 92px;
     }
   }
@@ -31,7 +33,7 @@
   }
   @media screen and (min-width: 768px) {
     .list-clients__item {
-        width: 226px;
+        max-width: 226px;
         }
     }
   
@@ -40,7 +42,7 @@
     .list-clients {
       flex-wrap: nowrap;
       &__item {
-        width: 170px;
+        max-width: 170px;
         }
     }
   }
