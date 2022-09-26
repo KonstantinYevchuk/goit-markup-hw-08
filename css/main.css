@@ -657,7 +657,7 @@ p {
 .main-content__back-image {
   max-width: 480px;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/header480@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-image/header-480@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -681,18 +681,18 @@ p {
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .main-content__back-image {
-    background-image: url(/images/header/header480@2x.jpg);
+    background-image: url(/images/main-image/header-480@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .main-content__back-image {
     max-width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/header768@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-image/header-678@1x.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .main-content__back-image {
-    background-image: url(/images/header/header768@2x.jpg);
+    background-image: url(/images/main-image/header-678@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -702,7 +702,7 @@ p {
   }
   .main-content__back-image {
     max-width: 1600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/header1600@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-image/header-1200@1x.jpg);
   }
   .main-content__title {
     font-weight: 900;
@@ -718,7 +718,7 @@ p {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .main-content__back-image {
-    background-image: url(/images/header/header1600@2x.jpg);
+    background-image: url(/images/main-image/header-1200@2x.jpg);
   }
 }
 .list-features__item {
