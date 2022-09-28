@@ -507,6 +507,9 @@ p {
     margin-left: auto;
     column-gap: 30px;
   }
+  .contacts__list:not(:last-child) {
+    margin-bottom: 0;
+  }
   .contacts__link {
     display: flex;
     font-weight: 500;
@@ -681,7 +684,7 @@ p {
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .main-content__back-image {
-    background-image: url(../images/header-480@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-480@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -692,7 +695,7 @@ p {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .main-content__back-image {
-    background-image: url(../images/header-678@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-678@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -718,7 +721,7 @@ p {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .main-content__back-image {
-    background-image: url(../images/header-1200@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-1200@2x.jpg);
   }
 }
 .list-features__item {
@@ -1074,6 +1077,7 @@ p {
   }
   .contianer-contacts {
     margin-right: 70px;
+    margin-bottom: 0;
   }
   .logo_position,
 .logo_white {
@@ -1081,6 +1085,7 @@ p {
   }
   .social-footer {
     margin-right: 93px;
+    margin-bottom: 0;
   }
   .footer-form-block {
     margin-left: auto;

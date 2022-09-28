@@ -182,6 +182,10 @@
       display: flex;
       margin-left: auto;
       column-gap: 30px;
+
+      &__list:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
     
     .contacts__link {
